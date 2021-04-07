@@ -98,6 +98,10 @@ function right(){
         uploadBackground();
         uploadcar1();
     }
+    if(car1_x>700){
+        console.log("Car1 won")
+        document.getElementById('game_status').innerHTML="Car1 won";
+    }
 }
 
 window.addEventListener("keydown",my_keydown);
@@ -155,5 +159,9 @@ function right(){
         console.log("when D arrow is pressed,x= "+car2_x+" y= "+car2_y);
         uploadBackground();
         uploadcar2();
+    }
+    if(car2_x>700){
+        console.log("Car2 won")
+        document.getElementById('game_status').innerHTML="Car2 won";
     }
 }
